@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'xcodebuild'
+        sh 'xcodebuild -allowProvisioningUpdates'
       }
     }
   }
