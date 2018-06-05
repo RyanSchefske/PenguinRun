@@ -2,6 +2,9 @@ pipeline {
   agent any
   stages {
     stage('Build') {
+      environment {
+        CI = 'true'
+      }
       parallel {
         stage('Build') {
           steps {
