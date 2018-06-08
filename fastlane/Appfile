@@ -1,0 +1,8 @@
+app_identifier("com.ryanschefske.PenguinRun") # The bundle identifier of your app
+apple_id("ryanschefske@gmail.com") # Your Apple email address
+
+itc_team_id("119014691") # iTunes Connect Team ID
+team_id("3LN4LFZD99") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
