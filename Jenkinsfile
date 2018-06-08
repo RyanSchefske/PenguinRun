@@ -2,18 +2,15 @@ pipeline {
   agent any
   stages {
     stage('Build') {
-      environment {
-        CI = 'true'
-      }
       parallel {
         stage('Build') {
           steps {
             sh 'xcodebuild -allowProvisioningUpdates'
           }
         }
-        stage('Print Build') {
+        stage('Fastlane Test') {
           steps {
-            echo 'Building...'
+            sh 'fastlane tests'
           }
         }
       }
